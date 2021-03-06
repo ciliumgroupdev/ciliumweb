@@ -28,3 +28,36 @@ function prevSlide() {
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
+
+
+
+const readMoreBtn = document.querySelector(".btn-learn-more");
+const text = document.querySelector(".col-lg-6 pt-4 pt-lg-0");
+
+readMoreBtn.addEventListener("click", (e) => {
+    text.classList.toggle("show-more");
+    if (readMoreBtn.innerText === "Read More") {
+        readMoreBtn.innerText = "Read Less";
+    } else {
+        readMoreBtn.innerText = "Read More";
+    }
+});
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     const expandMore = document.querySelectorAll("[expand-More]")
+
+//     function expand() {
+//         const showContent = document.getElementById(this.dataset.target)
+//         if (showContent.classList.contains('expand-active')) {
+//             this.innerHTML = this.dataset.showtext
+//         } else {
+//             this.innerHTML = this.hidetext
+//         }
+//         showContent.classList.toggle('expand-active')
+//     }
+
+//     expandsMore.forEach(expandMore => {
+//         expandMore.addEventListener('click', expand)
+//     })
+// })

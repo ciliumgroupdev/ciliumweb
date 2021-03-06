@@ -812,6 +812,17 @@ section {
   margin-bottom: 0;
 }
 
+.moreText {
+  display: none;
+}
+
+.text.show-more .moreText {
+  display: inline;
+}
+.text.show-more .dots {
+  display: none;
+}
+
 .about .content .btn-learn-more {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -831,6 +842,7 @@ section {
 
 .about .content .btn-learn-more:hover {
   background: #47b2e4;
+  cursor: pointer;
   color: #fff;
   text-decoration: none;
 }
@@ -1048,6 +1060,7 @@ section {
 
 .services .icon-box h4 a {
   color: #37517e;
+  margin-trim:initial;
   transition: ease-in-out 0.3s;
 }
 
@@ -1091,16 +1104,18 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 40px;
-  border-radius: 50px;
+  border-radius: 20px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #47b2e4;
   color: #fff;
+  
+
 }
 
 .cta .cta-btn:hover {
   background: #47b2e4;
-  border: 2px solid #47b2e4;
+  border: 2px solid #fff;
 }
 
 @media (max-width: 1024px) {
